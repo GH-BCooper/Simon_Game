@@ -67,6 +67,7 @@ function checkAnswer(currentLevel) {
         }, 200);
         $("#level-title").text("Game Over, Press Any Key to Restart");
         startOver();
+        $("h2").show();
     }
 }
 
@@ -74,5 +75,4 @@ function startOver() {
     level = 0;
     gamePattern = [];
     started = false;
-    $("h2").show();
 }
