@@ -45,7 +45,7 @@ $(document).keydown(function () {
     if(!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
-        $("h2").remove();
+        $("h2").hide();
         started = true;
     }
 });
@@ -74,4 +74,5 @@ function startOver() {
     level = 0;
     gamePattern = [];
     started = false;
+    $("h2").show();
 }
