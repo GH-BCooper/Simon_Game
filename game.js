@@ -45,6 +45,7 @@ $(document).keydown(function () {
     if(!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
+        $("h2").remove();
         started = true;
     }
 });
